@@ -1,24 +1,27 @@
 # AutoCare
 
-Bilingual Ukrainian / English auto repair landing page, created as a portfolio demonstration.
+[Public website](https://baronlda.github.io/autocare/) · [English version](https://baronlda.github.io/autocare/?lang=en)
 
-[Website](https://baronlda.github.io/autocare/) · [English version](https://baronlda.github.io/autocare/?lang=en)
+A bilingual Ukrainian / English auto workshop portfolio demonstration.
 
-## Features
+## Design and experience
 
-- Responsive charcoal and orange design with an original generated workshop hero image.
-- Six service categories, filterable service cards and service selection linked to the enquiry form.
-- Workshop approach, four-step service journey, clearly labelled fictional reviews and five FAQs.
-- Ukrainian and English translations, document metadata, keyboard navigation and reduced-motion support.
-- Demo form with name, phone, vehicle and service validation.
-- Telegram draft composer with clipboard copying; no connected recipient and no messages sent.
+The website is built around a car and a service enquiry, with an interactive schematic on the first screen. A warm paper palette, lime accents, large typography and workshop document details run through the whole page.
 
-## Run and publish
+- Interactive car diagram and six service selectors linked to the enquiry.
+- Filtered service directory with expandable rows.
+- Workshop photograph and work order showing four repair stages.
+- Single large review with previous / next navigation. Reviews are clearly marked as fictional examples.
+- Two-step enquiry form: vehicle details, then contact details, then a demo confirmation. The side panel reflects entered vehicle and chosen service.
+- Telegram draft creation and copying, expandable FAQ, mobile navigation, keyboard support and reduced motion.
+- Language switching preserves form values, wizard step, review, chosen service, filters and open content.
 
-This is a static website. Serve the repository root with any static HTTP server. No dependencies or build are required. GitHub Pages publishes the `main` branch, repository root.
+## Source
 
-## Demonstration content
+`index.html` loads `content.js` (bilingual content), `app.js` (rendering and interactions) and `styles.css`. `hero.png` is an original generated illustration of a workshop. The earlier `sections.css` is retained as an unused historical asset; the current website does not load it.
 
-AutoCare is a neutral fictional brand. There are no real workshop contacts, client testimonials or appointment slots. Contact details are never transmitted or persisted. The hero is an original generated editorial image, not a photo of an actual AutoCare workshop.
+Static HTML/CSS/JavaScript, no dependencies and no build. GitHub Pages publishes `main` from the repository root.
 
-Edit content in `app.js` and visual styles in the CSS files. A real booking flow needs a receiving service and confirmed workshop contact information.
+## Demonstration
+
+AutoCare is a fictional brand. There is no actual workshop address, real client review, live appointment time, or receiving endpoint. Form details are not sent or persisted. Telegram creates a local draft, not a message to a connected recipient. The diagram selects a service and does not diagnose faults.
